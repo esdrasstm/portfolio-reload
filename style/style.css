@@ -7,15 +7,91 @@
     list-style-type: none;
     font-family: "Sora";
 }
-
-body {
-    background-color: #F4F4F4;
-    max-width: 100%
+.titulo{
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+.web-design{
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+.ui-design{
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
 }
 
-main{
-
+.social-media{
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
 }
+
+.titulo2{
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 70%;
+}
+
+.sobre{
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        translate: 0 100vw;
+    }
+
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+.logotipo {
+	animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .button {
+	animation: jello-horizontal 1.5s both;
+}
+
+.sub-text {
+	animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.sub-text-2 {
+	animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 .menu {
     background-color: #D4D4D4;
@@ -23,7 +99,6 @@ main{
     justify-content: space-around;
     display: flex;
     align-items: center;
-
 }
 
 nav li {
@@ -191,4 +266,61 @@ nav li {
 
 .foto {
     margin-top: 30px;
+}
+
+.titulo3{
+    color: #FF2E00;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.portfolio{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pao-recheado{
+    border: solid 1px #484848;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.pao-recheado h1{
+    color: #FF2E00;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.focusflow{
+    border: solid 1px #484848;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+.focusflow h1{
+    color: #FF2E00;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.petlife{
+    border: solid 1px #484848;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+.petlife h1{
+    color: #FF2E00;
+    text-align: center;
+    padding-top: 30px;
 }
