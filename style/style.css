@@ -7,6 +7,27 @@
     list-style-type: none;
     font-family: "Sora";
 }
+
+/*inicio animação*/
+.principal-text{
+    animation: scale-down linear both;
+    animation-timeline: view(block);
+    animation-range: cover 50% exit 0%;
+  
+}
+
+@keyframes appear {
+    from{
+        opacity: 1;
+        translate: 0 -100vw;
+    }
+
+    to{
+        opacity: 0;
+        translate: 0 0;
+    }
+}
+
 .titulo{
     animation: appear 1ms ease-in-out;
     animation-timeline: view();
@@ -54,7 +75,7 @@
 }
 
 .logotipo {
-	animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 @keyframes text-focus-in {
@@ -68,9 +89,69 @@
     }
   }
 
-  .button {
-	animation: jello-horizontal 1.5s both;
+  .principal-text {
+	animation: slide-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
+
+  @keyframes slide-in-blurred-left {
+    0% {
+      transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+      transform-origin: 100% 50%;
+      filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) scaleY(1) scaleX(1);
+      transform-origin: 50% 50%;
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+  .button {
+	animation: bounce-top 0.9s both;
+}
+
+@keyframes bounce-top {
+    0% {
+      transform: translateY(-45px);
+      animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      transform: translateY(-24px);
+      animation-timing-function: ease-in;
+    }
+    65% {
+      transform: translateY(-12px);
+      animation-timing-function: ease-in;
+    }
+    82% {
+      transform: translateY(-6px);
+      animation-timing-function: ease-in;
+    }
+    93% {
+      transform: translateY(-4px);
+      animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      transform: translateY(0px);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: translateY(0px);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  
 
 .sub-text {
 	animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -92,6 +173,8 @@
       opacity: 1;
     }
   }
+
+/*fim animação*/
 
 .menu {
     background-color: #D4D4D4;
@@ -208,6 +291,10 @@ nav li {
     margin-right: 20px;
 }
 
+.web-design .link{
+    font-size: 15px;
+}
+
 .web-design h1{
     color: #FF2E00;
 }
@@ -288,9 +375,10 @@ nav li {
 }
 
 .pao-recheado{
+    display: inline-block;
     border: solid 1px #484848;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .pao-recheado h1{
@@ -302,7 +390,7 @@ nav li {
 .focusflow{
     border: solid 1px #484848;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: 50px;
     padding-bottom: 10px;
 }
 
@@ -315,7 +403,7 @@ nav li {
 .petlife{
     border: solid 1px #484848;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: 50px;
     padding-bottom: 10px;
 }
 
@@ -323,4 +411,37 @@ nav li {
     color: #FF2E00;
     text-align: center;
     padding-top: 30px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-redes a{
+    color: #FF2E00;
+    font-size: 30px;
+    display: grid;
+    margin: 5px;
+}
+
+.footer-redes a:hover{
+    color: #484848;
+    transition: 0.2s ease-in;
+}
+
+.licenca, a{
+    font-size: 12px;
+    color: #FF2E00;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.licenca{
+    display: block;
+    border: solid 1px;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
 }
