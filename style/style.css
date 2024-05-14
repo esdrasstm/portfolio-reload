@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Sora";
+}
+
+body {
+    background-color: #F4F4F4;
+    max-width: 100%
+}
+
+main{
+
+}
+
+.menu {
+    background-color: #D4D4D4;
+    padding: 15px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.lista a {
+    color: #484848;
+    font-weight: 700;
+    font-size: 15px;
+    display: block;
+    padding: 10px;
+}
+
+.lista a:hover {
+    color: #FF2E00;
+    transition: 0.2s ease-in;
+}
+
+#sociais {
+    color: #484848;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sociais:hover {
+    color: #FF2E00;
+    transition: 0.2s ease-in;
+}
+
+/*apresentação*/
+
+.container {
+    display: inline-block;
+    padding: 150px 250px 150px 300px;
+    justify-content: space-around;
+}
+
+.logotipo{
+    margin-left: 250px;
+}
+
+.principal-text {
+    color: #484848;
+    font-size: 35px;
+    margin-left: 250px;
+}
+
+.sub-text {
+    color: #FF2E00;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 250px;
+}
+
+.sub-text-2 {
+    color: #FF2E00;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 250px;
+    margin-top: 25px;
+    transform: rotate(6deg);
+
+}
+
+.button{
+    border: solid 2px #FF2E00;
+    border-radius: 10px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 5px 20px 0 20px;
+    margin-left: 900px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.button a{
+    color: #FF2E00;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.titulo{
+    color: #FF2E00;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.servicos{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.web-design{
+    border: solid 1px #484848;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.web-design h1{
+    color: #FF2E00;
+}
+
+.ui-design{
+    border: solid 1px #484848;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ui-design h1{
+    color: #FF2E00;
+}
+
+.social-media{
+    border: solid 1px #484848;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.social-media h1{
+    color: #FF2E00;
+}
+
+.titulo2{
+    color: #FF2E00;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sobre-mim {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.sobre h1{
+    color: #FF2E00;
+}
+
+.sobre{
+    border: solid 1px #484848;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #484848;
+    width: 400px;
+}
+
+.foto {
+    margin-top: 30px;
+}
